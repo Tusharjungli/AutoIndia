@@ -19,4 +19,4 @@ module.exports = {
   },
   darkMode: 'class', // Matches ThemeToggle component usage
   plugins: [],
-};
+}
