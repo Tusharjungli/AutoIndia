@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "types": ["./src/types/razorpay", "node"], // Added "node" for Node.js types
     "incremental": true,
     "plugins": [
       {
@@ -22,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/test-db.ts"], // Explicitly include test-db.ts
   "exclude": ["node_modules"]
 }

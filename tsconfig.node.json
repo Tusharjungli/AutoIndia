@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "target": "ES2022",
+      "esModuleInterop": true,
+      "types": ["node"],
+      "outDir": "./dist" // Optional: where compiled files go if needed
+    },
+    "ts-node": {
+      "esm": true // Enables ESM support for ts-node
+    },
+    "include": ["src/lib/test-db.ts"],
+    "exclude": ["node_modules"]
+  }
